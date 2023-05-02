@@ -4,6 +4,7 @@
   justify-content: space-between;
   width: 360px;
   height: 450px;
+  margin-top: 20px;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -35,6 +36,7 @@
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 .tag,
 .location,
@@ -63,5 +65,5 @@
 
 .stats li:last-child {
   border-right: none;
-  border-left: solid 0.5px rgb(132, 176, 180);
+
 }
