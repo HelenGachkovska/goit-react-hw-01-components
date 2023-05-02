@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import css from './FriendListItem.module.css'
 
-export const FriendListItem = ({id, name, avatar, isOnline}) => {  
+export const FriendListItem = ({ name, avatar, isOnline}) => {  
     
         return (<li className={css.item} >
                 <span
@@ -19,7 +19,6 @@ export const FriendListItem = ({id, name, avatar, isOnline}) => {
 
 
 FriendListItem.propTypes = {  
-  id: PropTypes.number.isRequired,
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
