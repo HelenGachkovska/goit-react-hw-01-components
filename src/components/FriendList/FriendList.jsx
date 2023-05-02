@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import friends from '../../data/friends.json';
 import clsx from 'clsx';
 import css from './FriendList.module.css';
 
