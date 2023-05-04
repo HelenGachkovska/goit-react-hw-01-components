@@ -5,7 +5,7 @@ import { getRandomHexColor } from '../../utils/colorPicker';
 export const Statistics = ({ data, title }) => {
   return (
     <section className={css.statistics}>
-      <h2 className={css.title}>{title}</h2>
+      {title  && <h2 className={css.title}>{title}</h2>}
       <ul className={css.statlist}>
         {data.map(el => (
           <li className={css.item} key={el.id} style={{backgroundColor: getRandomHexColor()}}>
@@ -19,7 +19,7 @@ export const Statistics = ({ data, title }) => {
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   data: PropTypes.arrayOf(
      PropTypes.shape({      
         id: PropTypes.string.isRequired,
